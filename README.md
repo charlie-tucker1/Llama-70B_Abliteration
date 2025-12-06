@@ -3,8 +3,11 @@
 
 I've found the layer specific abliteration works the best in practice. It computes refusal directions for each targeted layer.
 
-For the intuition behind abliteration:
-refusal direction = (m(harmful) - m(harmless) / ||m(harmful) - m(harmless)||     (In terms of activations when given harmful/harmless prompts) m = mean
+
+For the intuition behind abliteration: (Generally)
+
+refusal direction = (m(harmful) - m(harmless) / ||m(harmful) - m(harmless)||     
+(In terms of activations when given harmful/harmless prompts) m = mean
 
 post abliteration weight = pre abl. weight - (pre abl. weight * refusal direction)
 
